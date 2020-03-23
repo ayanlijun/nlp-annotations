@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="nlp-annotations",
-    version="1.0.0",
+    version="1.0.1",
     author="asciialex",
     author_email="alex@asciialex.com",
     description="NLP Annotation Helpers",
