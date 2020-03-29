@@ -26,6 +26,7 @@ To convert this to an _entity list_ you can:
 
 ```python
 from nlp_annotations import markdown_links2entity_list
+
 markdown_links2entity_list("The weather is [sunny](weather) and the sky is [blue](color).")
 # ('The weather is sunny and the sky is blue.', {'entities': [(15, 20, 'weather'), (36, 40, 'color')]})
 ```
@@ -54,6 +55,10 @@ To convert this to a _markdown links_ string, you can:
 
 ```python
 from nlp_annotations import entity_list2markdown_links
-entity_list2markdown_links("The weather is sunny and the sky is blue.", [(15, 20, 'weather'), (36, 40, 'color')])
+
+entity_list2markdown_links(
+    "The weather is sunny and the sky is blue.",
+    [(15, 20, 'weather'), (36, 40, 'color')]
+)
 # 'The weather is [sunny](weather) and the sky is [blue](color).'
 ```
